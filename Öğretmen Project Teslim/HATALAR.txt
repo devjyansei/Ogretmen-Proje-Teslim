@@ -1,0 +1,14 @@
+1-Oyun başladığında player kendi canını 0'a ayarladığı için öldürüyor.Ayrıca  Destroy(this) ile PlayerController scriptini siliyor. Bu kodu kaldırdım. Başlangıç canını 100 yaptım. Böylece Lose ekranından kurtuldum.
+2-bullet prefabı scripte tanımlanmamıştı. Onu tanımladım.
+3-Character controller componentini aktifleştirip scripte tanımladım. Daha sonra Movement() fonksiyonunu oluşturup Update içerisine yazdım. Karakterin yürümesi tamamlandı.
+4-Kamerayı kontrol edebilmek için PlayerLook scriptindeki sensivity i 0 dan 1 e yükselttim. 
+5-Bir Enemy class ı oluşturdum ve düşmanlara atadım. Daha sonra canlarını kontrol etmek için health değişkeni tanımladım.
+6-Düşmanların tag ini Enemy olarak değiştirdim.
+7-Mermiye hasar değeri ekledim.
+8-Düşmanlar ile mermilerin çarpışabilmesi için Enemylere collider ekledim.
+9-Mermilerin düşmana çarptıktan sonra hasar verip kendini yoketmesini sağladım.Bunu Hit() fonksiyonuyla yaptım.
+10-mermiler eğer düşmana çarpmazsa yokolmayacağı için performans adına, mermilere atıldıktan 5 saniye sonra otomatik yokolma özelliği ekledim.
+11-Enemylerin üzerindeki gereksiz componentleri kaldırdım.
+12-Kamera kontrolcüsüne dikeyde hareket imkanı sağladım.
+13-Uzay gemisine Finish tag i vererek uzay gemisine vardığımızda oyunu kazanabilme özelliğini çalıştırdım.
+14-Heal objesi ekledim ve çalışır hale getirdim.
